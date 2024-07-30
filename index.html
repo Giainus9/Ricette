@@ -1,94 +1,69 @@
-<title>Ricette</title>
-<style>
-    body {
-        background-image: url('https://aws.imagelinenetwork.com/agronotizie/materiali/ArticoliImg/agroalimentare-cibo-verdure-olio-pomodori-peperoni-aglio-generata-con-intelligenza-artificiale-by-sasint-adobe-stock-1200x800.jpeg');
-        background-size: cover; /* Regola la dimensione dell'immagine */
-        background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
-    }
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricette</title>
+    <style>
+        body {
+            background-image: url('https://aws.imagelinenetwork.com/agronotizie/materiali/ArticoliImg/agroalimentare-cibo-verdure-olio-pomodori-peperoni-aglio-generata-con-intelligenza-artificiale-by-sasint-adobe-stock-1200x800.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
 
-    .ricette{
-        background-color: rgba(255, 255, 255, 0);
-        color: white;
-        border-width: 2px;
-        border-color: white;
-        border-radius: 4px;
-        border: solid;
-        cursor: pointer;
-        margin-right: 8px;
-        margin-bottom: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 16px;
-        padding-right: 16px;
-        transition: opacity 0.15s;
-        vertical-align: top;
-    }
+        .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
 
-    .ricette:hover{
-        opacity: 0.7;
-    }
+        .ricette {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 2px solid white;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 8px;
+            padding: 10px 16px;
+            transition: opacity 0.3s, transform 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 16px;
+        }
 
-    .ricette:active{
-        opacity: 0.5;
-    }
-</style>
+        .ricette:hover {
+            opacity: 0.7;
+            transform: scale(1.05);
+        }
 
-<a href="https://ricette.giallozafferano.it/Brodo-vegetale.html">
-    <button class="ricette">
-        BRODO VEGETALE
-    </button>
-</a>
-<br>
-<a href="https://ricette.giallozafferano.it/Risotto-alla-zucca.html">
-    <button class="ricette">
-        RISOTTO ALLA ZUCCA
-    </button>
-</a>
-<br>
-<a href="https://ricette.giallozafferano.it/Dado-vegetale.html">
-    <button class="ricette">
-        DADO VEGETALE
-    </button>
-</a>
-<br>
-<a href="https://ricette.giallozafferano.it/Verza-in-padella.html">
-    <button class="ricette">
-        VERZA IN PADELLA
-    </button>
-</a>
-<br>
-<a href="https://www.cookaround.com/ricetta/cardi-al-latte.html">
-    <button class="ricette">
-        CARDI AL LATTE 1
-    </button>
-</a>
-<br>
-<a href="https://www.parmalat.it/zymil/ricette/cardi-al-latte">
-    <button class="ricette">
-        CARDI AL LATTE 2
-    </button>
-</a>
-<br>
-<a href="https://www.paginemediche.it/benessere/cura-e-automedicazione/dieta-per-colon-irritabile-cosa-mangiare-e-cosa-evitare">
-    <button class="ricette">
-        DIETA PER COLON IRRITABILE
-    </button>
-</a>
-<br>
-<a href="https://blog.giallozafferano.it/valeriaciccotti/risotto-al-radicchio/">
-    <button class="ricette">
-        RISOTTO AL RADICCHIO ROSSO
-    </button>
-</a>
-<br>
-<a href="Polpette.html">
-    <button class="ricette">
-        POLPETTE
-    </button>
-</a>
-<br>
-<a href="https://ricette.giallozafferano.it/Risotto-con-zucchine.html">
-    <button class="ricette">
-        RISOTTO ALLE ZUCCHINE
-    </button>
-</a>
+        .ricette:active {
+            opacity: 0.5;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ricette Deliziose</h1>
+        <a href="https://ricette.giallozafferano.it/Brodo-vegetale.html" class="ricette">BRODO VEGETALE</a>
+        <a href="https://ricette.giallozafferano.it/Risotto-alla-zucca.html" class="ricette">RISOTTO ALLA ZUCCA</a>
+        <a href="https://ricette.giallozafferano.it/Dado-vegetale.html" class="ricette">DADO VEGETALE</a>
+        <a href="https://ricette.giallozafferano.it/Verza-in-padella.html" class="ricette">VERZA IN PADELLA</a>
+        <a href="https://www.cookaround.com/ricetta/cardi-al-latte.html" class="ricette">CARDI AL LATTE 1</a>
+        <a href="https://www.parmalat.it/zymil/ricette/cardi-al-latte" class="ricette">CARDI AL LATTE 2</a>
+        <a href="https://www.paginemediche.it/benessere/cura-e-automedicazione/dieta-per-colon-irritabile-cosa-mangiare-e-cosa-evitare" class="ricette">DIETA PER COLON IRRITABILE</a>
+        <a href="https://blog.giallozafferano.it/valeriaciccotti/risotto-al-radicchio/" class="ricette">RISOTTO AL RADICCHIO ROSSO</a>
+        <a href="Polpette.html" class="ricette">POLPETTE</a>
+        <a href="https://ricette.giallozafferano.it/Risotto-con-zucchine.html" class="ricette">RISOTTO ALLE ZUCCHINE</a>
+    </div>
+</body>
+</html>
